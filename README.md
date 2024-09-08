@@ -1,5 +1,11 @@
 # Invoice Generator API
-
+## Libraries and Tools
+- express: Web framework for Node.js
+- mongoose: MongoDB ODM
+- puppeteer: Used for generating PDF invoices
+- bcryptjs: Used for hashing passwords
+- jsonwebtoken: For user authentication
+- 
 ## Prerequisites
 - Node.js (>=14.x)
 - MongoDB
