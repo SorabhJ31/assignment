@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  invoicegenerator:
+    image: sorabhj31/invoicegenerator:latest
+    container_name: invoicegenerator_app
+    ports:
+      - "8080:80" # Maps port 80 in the container to port 8080 on the host
+    environment:
+      - ENV_VARIABLE_1=value1
+      - ENV_VARIABLE_2=value2
+    volumes:
+      - ./data:/app/data # Maps a local directory to the container for persistent storage
+    networks:
+      - invoice_network
+
+networks:
+  invoice_network:
+    driver: bridge
